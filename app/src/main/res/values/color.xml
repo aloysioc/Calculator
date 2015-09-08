@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="accent" type="color">#080b29</item>
+    <item name="accent_dark" type="color">#3934cc</item>
+
+    <item name="colorPrimary" type="color">#fa364353</item>
+    <item name="colorPrimaryDark" type="color">#0d0d22</item>
+
+    <item name="gray" type="color">#c8c8c8</item>
+    <item name="gray_medium" type="color">#e6e6e6</item>
+    <item name="gray_memory" type="color">#505050</item>
+    <item name="gray_dark" type="color">#323232</item>
+    <item name="yellow" type="color">#fac832</item>
+    <item name="orange" type="color">#fa9632</item>
+</resources>

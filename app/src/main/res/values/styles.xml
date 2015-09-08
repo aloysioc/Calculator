@@ -5,4 +5,59 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <!-- BUTTON STYLE -->
+    <style name="ButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/gray</item>
+        <item name="android:gravity">center</item>
+        <item name="android:onClick">buttonClick</item>
+        <item name="android:padding">@dimen/ButtonPadding</item>
+        <item name="android:textColor">@color/gray_dark</item>
+        <item name="android:textSize">@dimen/DisplayFontSize</item>
+    </style>
+
+    <!-- TEXT VIEW DISPLAY STYLE -->
+    <style name="TextViewDisplayStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">1dp</item>
+        <item name="android:layout_marginLeft">1dp</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:background">@color/gray_dark</item>
+        <item name="android:padding">@dimen/ButtonPadding</item>
+        <item name="android:textColor">@color/gray_medium</item>
+        <item name="android:textSize">@dimen/DisplayFontSize</item>
+    </style>
+
+    <!-- TEXT VIEW MEMORY STYLE -->
+    <style name="TextViewMemoryStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/gray_memory</item>
+        <item name="android:lines">8</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:textSize">@dimen/MemoryFontSize</item>
+    </style>
+
+    <!-- LINEAR LAYOUT LANDSCAPE -->
+    <style name="LinearLayoutLandscapeStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- LINEAR LAYOUT BUTTON -->
+    <style name="LinearLayoutButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:baselineAligned">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
 </resources>
