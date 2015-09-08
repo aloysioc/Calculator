@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">Calculator</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="txDisplay"></string>
+    <string name="txOperator"></string>
+    <string name="txMemory"></string>
+    <string name="txCounter">1:\n2:\n3:\n4:\n5:\n6:\n7:\n8:</string>
+
+</resources>
