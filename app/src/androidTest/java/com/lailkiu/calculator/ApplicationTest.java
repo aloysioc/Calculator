@@ -1,4 +1,4 @@
-package com.lailkiu.calculatorv2;
+package com.lailkiu.calculator;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
