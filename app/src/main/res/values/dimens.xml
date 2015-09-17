@@ -1,5 +1,11 @@
 <resources>
 
-    <dimen name="DisplayFontSize">80sp</dimen>
+    <dimen name="activity_text_large">50sp</dimen>
+    <dimen name="activity_text_medium">35sp</dimen>
+    <dimen name="activity_text_small">25sp</dimen>
 
+    <dimen name="activity_text_padding">10dp</dimen>
+    <dimen name="activity_object_margin">1dp</dimen>
+
+    <dimen name="activity_wrap_padding">20dp</dimen>
 </resources>

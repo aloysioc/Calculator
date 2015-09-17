@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <dimen name="ScreenDimensionPadding">30dp</dimen>
-    <dimen name="ButtonPadding">20dp</dimen>
-    <dimen name="DisplayFontSize">60sp</dimen>
-    <dimen name="MemoryFontSize">30sp</dimen>
-
-</resources>

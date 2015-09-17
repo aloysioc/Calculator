@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="GRAY_M11">#303030</color>
+    <color name="GRAY_M07">#707070</color>
+    <color name="GRAY_M03">#c0c0c0</color>
+    <color name="GRAY_M01">#e0e0e0</color>
+
+    <color name="ORANGE_H08">#f39c12</color>
+    <color name="ORANGE_H04">#f9b32f</color>
+
+</resources>

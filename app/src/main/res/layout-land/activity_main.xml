@@ -1,171 +1,307 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout android:id="@+id/boxParent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_height="match_parent"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:orientation="horizontal">
 
-    <LinearLayout
+    <LinearLayout android:id="@+id/boxData"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:padding="@dimen/ScreenDimensionPadding">
+        android:layout_weight="1"
+        android:orientation="vertical">
 
-        <!-- Left Block -->
-        <LinearLayout
-            android:id="@+id/lScreen"
-            style="@style/LinearLayoutLandscapeStyle">
+        <LinearLayout android:id="@+id/boxMemory"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="horizontal">
 
-            <LinearLayout
-                android:id="@+id/lMemory"
-                style="@style/LinearLayoutButtonStyle">
+            <TextView android:id="@+id/Memory"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/GRAY_M11"
+                android:textColor="@color/GRAY_M07"
+                android:textSize="@dimen/activity_text_small"
+                android:gravity="start"
+                android:text="@string/m_memory"
+                android:padding="@dimen/activity_text_padding"
+                android:layout_margin="@dimen/activity_object_margin"/>
 
-                <TextView
-                    android:id="@+id/vCounter"
-                    style="@style/TextViewMemoryStyle"
-                    android:layout_marginLeft="1dp"
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/boxDisplayParent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <LinearLayout android:id="@+id/boxDisplayChild"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView android:id="@+id/Operator"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:gravity="top|center"
-                    android:text="@string/txCounter"
-                    android:textColor="#787878" />
-
-                <TextView
-                    android:id="@+id/vMemory"
-                    style="@style/TextViewMemoryStyle"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_marginTop="1dp"
-                    android:layout_weight="9"
-                    android:gravity="top|start"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:text="@string/txMemory"
-                    android:textColor="#e6e6e6" />
-            </LinearLayout>
-
-            <!-- Display -->
-            <LinearLayout
-                android:id="@+id/lDisplay"
-                style="@style/LinearLayoutButtonStyle">
-
-                <TextView
-                    android:id="@+id/vOperator"
-                    style="@style/TextViewDisplayStyle"
-                    android:layout_weight="2"
-                    android:gravity="center"
-                    android:text="@string/txOperator" />
-
-                <TextView
-                    android:id="@+id/vDisplay"
-                    style="@style/TextViewDisplayStyle"
-                    android:layout_weight="8"
+                    android:background="@color/GRAY_M11"
+                    android:textColor="@color/GRAY_M01"
+                    android:textSize="@dimen/activity_text_medium"
+                    android:text="@string/m_operator"
                     android:gravity="center|end"
-                    android:text="@string/txDisplay" />
-            </LinearLayout>
+                    android:layout_marginLeft="@dimen/activity_object_margin"
+                    android:layout_marginTop="@dimen/activity_object_margin"
+                    android:layout_marginBottom="@dimen/activity_object_margin" />
 
-            <LinearLayout
-                android:id="@+id/l04"
-                style="@style/LinearLayoutButtonStyle">
-
-                <Button
-                    android:id="@+id/btUnd"
-                    style="@style/ButtonStyle"
-                    android:text="BACKSPACE"
-                    android:textSize="@dimen/MemoryFontSize" />
-
-                <Button
-                    android:id="@+id/btClr"
-                    style="@style/ButtonStyle"
-                    android:text="RESET"
-                    android:textSize="@dimen/MemoryFontSize" />
+                <TextView android:id="@+id/Display"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="9"
+                    android:background="@color/GRAY_M11"
+                    android:textColor="@color/GRAY_M01"
+                    android:textSize="@dimen/activity_text_medium"
+                    android:text="@string/m_display"
+                    android:gravity="center|end"
+                    android:padding="@dimen/activity_text_padding"
+                    android:layout_marginTop="@dimen/activity_object_margin"
+                    android:layout_marginRight="@dimen/activity_object_margin"
+                    android:layout_marginBottom="@dimen/activity_object_margin" />
             </LinearLayout>
         </LinearLayout>
 
-        <!-- Right Block -->
-        <LinearLayout
-            android:id="@+id/lButtons"
-            style="@style/LinearLayoutLandscapeStyle">
+        <LinearLayout android:id="@+id/boxCommandsParent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
-            <include layout="@layout/activity_main_first_line" />
+            <LinearLayout android:id="@+id/boxCommandsChild"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
-            <LinearLayout
-                android:id="@+id/l01"
-                style="@style/LinearLayoutButtonStyle">
+                <Button android:id="@+id/btReset"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/GRAY_M03"
+                    android:textColor="@color/GRAY_M11"
+                    android:textSize="@dimen/activity_text_small"
+                    android:text="@string/m_reset"
+                    android:layout_margin="@dimen/activity_object_margin"/>
 
-                <Button
-                    android:id="@+id/bt04"
-                    style="@style/ButtonStyle"
-                    android:text="4" />
-
-                <Button
-                    android:id="@+id/bt05"
-                    style="@style/ButtonStyle"
-                    android:text="5" />
-
-                <Button
-                    android:id="@+id/bt06"
-                    style="@style/ButtonStyle"
-                    android:text="6" />
-
-                <Button
-                    android:id="@+id/btMul"
-                    style="@style/ButtonStyle"
-                    android:background="@color/yellow"
-                    android:text="*" />
+                <Button android:id="@+id/btBack"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/GRAY_M03"
+                    android:textColor="@color/GRAY_M11"
+                    android:textSize="@dimen/activity_text_small"
+                    android:text="@string/m_back"
+                    android:layout_margin="@dimen/activity_object_margin"/>
             </LinearLayout>
+        </LinearLayout>
 
-            <!-- Third row -->
-            <LinearLayout
-                android:id="@+id/l02"
-                style="@style/LinearLayoutButtonStyle">
+    </LinearLayout>
 
-                <Button
-                    android:id="@+id/bt01"
-                    style="@style/ButtonStyle"
-                    android:text="1" />
+    <LinearLayout android:id="@+id/boxButtons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
 
-                <Button
-                    android:id="@+id/bt02"
-                    style="@style/ButtonStyle"
-                    android:text="2" />
+        <LinearLayout android:id="@+id/boxN7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
-                <Button
-                    android:id="@+id/bt03"
-                    style="@style/ButtonStyle"
-                    android:text="3" />
+            <Button android:id="@+id/bt07"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/GRAY_M01"
+                android:textColor="@color/GRAY_M11"
+                android:textSize="@dimen/activity_text_medium"
+                android:text="@string/m_07"
+                android:layout_margin="@dimen/activity_object_margin"/>
 
-                <Button
-                    android:id="@+id/btSub"
-                    style="@style/ButtonStyle"
-                    android:background="@color/yellow"
-                    android:text="-" />
-            </LinearLayout>
+            <Button android:id="@+id/bt08"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/GRAY_M01"
+                android:textColor="@color/GRAY_M11"
+                android:textSize="@dimen/activity_text_medium"
+                android:text="@string/m_08"
+                android:layout_margin="@dimen/activity_object_margin"/>
 
-            <!-- Fourth row -->
-            <LinearLayout
-                android:id="@+id/l03"
-                style="@style/LinearLayoutButtonStyle">
+            <Button android:id="@+id/bt09"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/GRAY_M01"
+                android:textColor="@color/GRAY_M11"
+                android:textSize="@dimen/activity_text_medium"
+                android:text="@string/m_09"
+                android:layout_margin="@dimen/activity_object_margin"/>
 
-                <Button
-                    android:id="@+id/bt00"
-                    style="@style/ButtonStyle"
-                    android:text="0" />
+            <Button android:id="@+id/btDiv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/ORANGE_H04"
+                android:textColor="@color/GRAY_M11"
+                android:textSize="@dimen/activity_text_medium"
+                android:text="@string/m_Div"
+                android:layout_margin="@dimen/activity_object_margin"/>
 
-                <Button
-                    android:id="@+id/btDec"
-                    style="@style/ButtonStyle"
-                    android:text="." />
+        </LinearLayout>
 
-                <Button
-                    android:id="@+id/btRes"
-                    style="@style/ButtonStyle"
-                    android:background="@color/orange"
-                    android:text="=" />
+        <LinearLayout android:id="@+id/boxN4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
-                <Button
-                    android:id="@+id/btSum"
-                    style="@style/ButtonStyle"
-                    android:background="@color/yellow"
-                    android:text="+" />
-            </LinearLayout>
+            <Button android:id="@+id/bt04"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/GRAY_M01"
+                android:textColor="@color/GRAY_M11"
+                android:textSize="@dimen/activity_text_medium"
+                android:text="@string/m_04"
+                android:layout_margin="@dimen/activity_object_margin"/>
+
+            <Button android:id="@+id/bt05"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/GRAY_M01"
+                android:textColor="@color/GRAY_M11"
+                android:textSize="@dimen/activity_text_medium"
+                android:text="@string/m_05"
+                android:layout_margin="@dimen/activity_object_margin"/>
+
+            <Button android:id="@+id/bt06"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/GRAY_M01"
+                android:textColor="@color/GRAY_M11"
+                android:textSize="@dimen/activity_text_medium"
+                android:text="@string/m_06"
+                android:layout_margin="@dimen/activity_object_margin"/>
+
+            <Button android:id="@+id/btMul"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/ORANGE_H04"
+                android:textColor="@color/GRAY_M11"
+                android:textSize="@dimen/activity_text_medium"
+                android:text="@string/m_Mul"
+                android:layout_margin="@dimen/activity_object_margin"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/boxN1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button android:id="@+id/bt01"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/GRAY_M01"
+                android:textColor="@color/GRAY_M11"
+                android:textSize="@dimen/activity_text_medium"
+                android:text="@string/m_01"
+                android:layout_margin="@dimen/activity_object_margin"/>
+
+            <Button android:id="@+id/bt02"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/GRAY_M01"
+                android:textColor="@color/GRAY_M11"
+                android:textSize="@dimen/activity_text_medium"
+                android:text="@string/m_02"
+                android:layout_margin="@dimen/activity_object_margin"/>
+
+            <Button android:id="@+id/bt03"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/GRAY_M01"
+                android:textColor="@color/GRAY_M11"
+                android:textSize="@dimen/activity_text_medium"
+                android:text="@string/m_03"
+                android:layout_margin="@dimen/activity_object_margin"/>
+
+            <Button android:id="@+id/btSub"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/ORANGE_H04"
+                android:textColor="@color/GRAY_M11"
+                android:textSize="@dimen/activity_text_medium"
+                android:text="@string/m_Sub"
+                android:layout_margin="@dimen/activity_object_margin"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/boxN0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button android:id="@+id/bt00"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/GRAY_M01"
+                android:textColor="@color/GRAY_M11"
+                android:textSize="@dimen/activity_text_medium"
+                android:text="@string/m_00"
+                android:layout_margin="@dimen/activity_object_margin"/>
+
+            <Button android:id="@+id/btDec"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/GRAY_M01"
+                android:textColor="@color/GRAY_M11"
+                android:textSize="@dimen/activity_text_medium"
+                android:text="@string/m_Dec"
+                android:layout_margin="@dimen/activity_object_margin"/>
+
+            <Button android:id="@+id/btResult"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/ORANGE_H08"
+                android:textColor="@color/GRAY_M11"
+                android:textSize="@dimen/activity_text_medium"
+                android:text="@string/m_Result"
+                android:layout_margin="@dimen/activity_object_margin"/>
+
+            <Button android:id="@+id/btSum"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/ORANGE_H04"
+                android:textColor="@color/GRAY_M11"
+                android:textSize="@dimen/activity_text_medium"
+                android:text="@string/m_Sum"
+                android:layout_margin="@dimen/activity_object_margin"/>
+
         </LinearLayout>
     </LinearLayout>
-</ScrollView>
+</LinearLayout>

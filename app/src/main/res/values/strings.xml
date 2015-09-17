@@ -3,9 +3,29 @@
     <string name="app_name">Calculator</string>
     <string name="action_settings">Settings</string>
 
-    <string name="txDisplay"></string>
-    <string name="txOperator"></string>
-    <string name="txMemory"></string>
-    <string name="txCounter">1:\n2:\n3:\n4:\n5:\n6:\n7:\n8:</string>
+    <string name="m_memory">MEMORY</string>
+    <string name="m_operator">+</string>
+    <string name="m_display">DISPLAY</string>
+
+    <string name="m_reset">RESET</string>
+    <string name="m_back">BACKSP.</string>
+
+    <string name="m_00">0</string>
+    <string name="m_01">1</string>
+    <string name="m_02">2</string>
+    <string name="m_03">3</string>
+    <string name="m_04">4</string>
+    <string name="m_05">5</string>
+    <string name="m_06">6</string>
+    <string name="m_07">7</string>
+    <string name="m_08">8</string>
+    <string name="m_09">9</string>
+    <string name="m_Dec">.</string>
+
+    <string name="m_Div">/</string>
+    <string name="m_Mul">*</string>
+    <string name="m_Sub">-</string>
+    <string name="m_Sum">+</string>
+    <string name="m_Result">=</string>
 
 </resources>
