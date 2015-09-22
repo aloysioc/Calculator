@@ -90,7 +90,8 @@
                     android:textColor="@color/GRAY_M11"
                     android:textSize="@dimen/activity_text_small"
                     android:text="@string/m_reset"
-                    android:layout_margin="@dimen/activity_object_margin"/>
+                    android:layout_margin="@dimen/activity_object_margin"
+                    android:onClick="buttonClick" />
 
                 <Button android:id="@+id/btBack"
                     android:layout_width="0dp"
@@ -100,7 +101,8 @@
                     android:textColor="@color/GRAY_M11"
                     android:textSize="@dimen/activity_text_small"
                     android:text="@string/m_back"
-                    android:layout_margin="@dimen/activity_object_margin"/>
+                    android:layout_margin="@dimen/activity_object_margin"
+                    android:onClick="buttonClick" />
             </LinearLayout>
         </LinearLayout>
 
@@ -126,7 +128,8 @@
                 android:textColor="@color/GRAY_M11"
                 android:textSize="@dimen/activity_text_medium"
                 android:text="@string/m_07"
-                android:layout_margin="@dimen/activity_object_margin"/>
+                android:layout_margin="@dimen/activity_object_margin"
+                android:onClick="buttonClick" />
 
             <Button android:id="@+id/bt08"
                 android:layout_width="0dp"
@@ -136,7 +139,8 @@
                 android:textColor="@color/GRAY_M11"
                 android:textSize="@dimen/activity_text_medium"
                 android:text="@string/m_08"
-                android:layout_margin="@dimen/activity_object_margin"/>
+                android:layout_margin="@dimen/activity_object_margin"
+                android:onClick="buttonClick" />
 
             <Button android:id="@+id/bt09"
                 android:layout_width="0dp"
@@ -146,7 +150,8 @@
                 android:textColor="@color/GRAY_M11"
                 android:textSize="@dimen/activity_text_medium"
                 android:text="@string/m_09"
-                android:layout_margin="@dimen/activity_object_margin"/>
+                android:layout_margin="@dimen/activity_object_margin"
+                android:onClick="buttonClick" />
 
             <Button android:id="@+id/btDiv"
                 android:layout_width="0dp"
@@ -156,7 +161,8 @@
                 android:textColor="@color/GRAY_M11"
                 android:textSize="@dimen/activity_text_medium"
                 android:text="@string/m_Div"
-                android:layout_margin="@dimen/activity_object_margin"/>
+                android:layout_margin="@dimen/activity_object_margin"
+                android:onClick="buttonClick" />
 
         </LinearLayout>
 
@@ -174,7 +180,8 @@
                 android:textColor="@color/GRAY_M11"
                 android:textSize="@dimen/activity_text_medium"
                 android:text="@string/m_04"
-                android:layout_margin="@dimen/activity_object_margin"/>
+                android:layout_margin="@dimen/activity_object_margin"
+                android:onClick="buttonClick" />
 
             <Button android:id="@+id/bt05"
                 android:layout_width="0dp"
@@ -184,7 +191,8 @@
                 android:textColor="@color/GRAY_M11"
                 android:textSize="@dimen/activity_text_medium"
                 android:text="@string/m_05"
-                android:layout_margin="@dimen/activity_object_margin"/>
+                android:layout_margin="@dimen/activity_object_margin"
+                android:onClick="buttonClick" />
 
             <Button android:id="@+id/bt06"
                 android:layout_width="0dp"
@@ -194,7 +202,8 @@
                 android:textColor="@color/GRAY_M11"
                 android:textSize="@dimen/activity_text_medium"
                 android:text="@string/m_06"
-                android:layout_margin="@dimen/activity_object_margin"/>
+                android:layout_margin="@dimen/activity_object_margin"
+                android:onClick="buttonClick" />
 
             <Button android:id="@+id/btMul"
                 android:layout_width="0dp"
@@ -204,7 +213,8 @@
                 android:textColor="@color/GRAY_M11"
                 android:textSize="@dimen/activity_text_medium"
                 android:text="@string/m_Mul"
-                android:layout_margin="@dimen/activity_object_margin"/>
+                android:layout_margin="@dimen/activity_object_margin"
+                android:onClick="buttonClick" />
 
         </LinearLayout>
 
@@ -222,7 +232,8 @@
                 android:textColor="@color/GRAY_M11"
                 android:textSize="@dimen/activity_text_medium"
                 android:text="@string/m_01"
-                android:layout_margin="@dimen/activity_object_margin"/>
+                android:layout_margin="@dimen/activity_object_margin"
+                android:onClick="buttonClick" />
 
             <Button android:id="@+id/bt02"
                 android:layout_width="0dp"
@@ -232,7 +243,8 @@
                 android:textColor="@color/GRAY_M11"
                 android:textSize="@dimen/activity_text_medium"
                 android:text="@string/m_02"
-                android:layout_margin="@dimen/activity_object_margin"/>
+                android:layout_margin="@dimen/activity_object_margin"
+                android:onClick="buttonClick" />
 
             <Button android:id="@+id/bt03"
                 android:layout_width="0dp"
@@ -242,7 +254,8 @@
                 android:textColor="@color/GRAY_M11"
                 android:textSize="@dimen/activity_text_medium"
                 android:text="@string/m_03"
-                android:layout_margin="@dimen/activity_object_margin"/>
+                android:layout_margin="@dimen/activity_object_margin"
+                android:onClick="buttonClick" />
 
             <Button android:id="@+id/btSub"
                 android:layout_width="0dp"
@@ -252,7 +265,8 @@
                 android:textColor="@color/GRAY_M11"
                 android:textSize="@dimen/activity_text_medium"
                 android:text="@string/m_Sub"
-                android:layout_margin="@dimen/activity_object_margin"/>
+                android:layout_margin="@dimen/activity_object_margin"
+                android:onClick="buttonClick" />
 
         </LinearLayout>
 
@@ -270,7 +284,8 @@
                 android:textColor="@color/GRAY_M11"
                 android:textSize="@dimen/activity_text_medium"
                 android:text="@string/m_00"
-                android:layout_margin="@dimen/activity_object_margin"/>
+                android:layout_margin="@dimen/activity_object_margin"
+                android:onClick="buttonClick" />
 
             <Button android:id="@+id/btDec"
                 android:layout_width="0dp"
@@ -280,7 +295,8 @@
                 android:textColor="@color/GRAY_M11"
                 android:textSize="@dimen/activity_text_medium"
                 android:text="@string/m_Dec"
-                android:layout_margin="@dimen/activity_object_margin"/>
+                android:layout_margin="@dimen/activity_object_margin"
+                android:onClick="buttonClick" />
 
             <Button android:id="@+id/btResult"
                 android:layout_width="0dp"
@@ -290,7 +306,8 @@
                 android:textColor="@color/GRAY_M11"
                 android:textSize="@dimen/activity_text_medium"
                 android:text="@string/m_Result"
-                android:layout_margin="@dimen/activity_object_margin"/>
+                android:layout_margin="@dimen/activity_object_margin"
+                android:onClick="buttonClick" />
 
             <Button android:id="@+id/btSum"
                 android:layout_width="0dp"
@@ -300,7 +317,8 @@
                 android:textColor="@color/GRAY_M11"
                 android:textSize="@dimen/activity_text_medium"
                 android:text="@string/m_Sum"
-                android:layout_margin="@dimen/activity_object_margin"/>
+                android:layout_margin="@dimen/activity_object_margin"
+                android:onClick="buttonClick" />
 
         </LinearLayout>
     </LinearLayout>
