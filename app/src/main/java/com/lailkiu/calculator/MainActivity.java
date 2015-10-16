@@ -81,13 +81,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void setScreen() {
-        TextView vDisplay = (TextView)findViewById(R.id.Display);
-        TextView vMemory = (TextView)findViewById(R.id.Memory);
-        TextView vOperator = (TextView)findViewById(R.id.Operator);
+        TextView display = (TextView)findViewById(R.id.Display);
+        TextView memory = (TextView)findViewById(R.id.Memory);
+        TextView operator = (TextView)findViewById(R.id.Operator);
 
-        vDisplay.setText(mDisplay);
-        vMemory.setText(mMemory);
-        vOperator.setText(mOperator);
+        display.setText(mDisplay);
+        memory.setText(mMemory);
+        operator.setText(mOperator);
     }
 
     public void buttonClick(View view) {

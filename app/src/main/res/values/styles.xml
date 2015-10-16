@@ -4,46 +4,17 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
     </style>
 
-    <style name="linear_layout_vertical_style">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:orientation">vertical</item>
-    </style>
-
-    <style name="linear_layout_horizontal_style">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:orientation">horizontal</item>
-    </style>
-    
-    <style name="box_display_style">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:background">@color/GRAY_M11</item>
-        <item name="android:textColor">@color/GRAY_M01</item>
-        <item name="android:padding">@dimen/activity_text_padding</item>
-    </style>
-
-    <style name="button_number_style">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:background">@color/GRAY_M01</item>
-        <item name="android:textColor">@color/GRAY_M11</item>
+    <style name="buttons_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
         <item name="android:layout_weight">1</item>
-        <item name="android:textSize">@dimen/activity_text_large</item>
-        <item name="android:padding">@dimen/activity_text_padding</item>
         <item name="android:layout_margin">@dimen/activity_object_margin</item>
+        <item name="android:onClick">buttonClick</item>
+        <item name="android:textColor">@color/GRAY_M11</item>
+        <item name="android:textSize">@dimen/activity_text_medium</item>
     </style>
 
-    <style name="button_operator_style">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:background">@color/ORANGE_H04</item>
-        <item name="android:textColor">@color/GRAY_M11</item>
-        <item name="android:layout_weight">1</item>
-        <item name="android:textSize">@dimen/activity_text_large</item>
-        <item name="android:padding">@dimen/activity_text_padding</item>
-        <item name="android:layout_margin">@dimen/activity_object_margin</item>
-    </style>
+    <!--
+    -->
 
 </resources>
